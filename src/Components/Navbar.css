@@ -1,0 +1,13 @@
+.navheading {
+  color: var(--primery);
+  font-size: medium;
+  /* fontsize: md; */
+  font-weight: bolder;
+  /* fontweight: bolder; */
+  transition: 0.3s ease-in-out;
+}
+.nav_Links{
+    color: var(--primery);
+    font-size: medium;
+    font-weight: bolder;
+}

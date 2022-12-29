@@ -1,11 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Header } from "./Components/Header";
+// import { Header } from "./Components/Header";
+import { Navbar } from "./Components/Navbar";
+import { About } from "./Pages/About";
+// import Contact from "./Pages/Contact";
+
 
 function App() {
+ 
   return (
-    <div className="App">
-      <h1>Hello </h1>
-    </div>
+    <>
+    <Navbar />
+    {/* <Header /> */}
+    <About />
+    {/* <Contact /> */}
+    </>
   );
 }
 
