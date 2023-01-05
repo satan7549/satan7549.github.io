@@ -8,14 +8,10 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-export function About() {
+export const About = () => {
   return (
-    <Container maxW={"80%"} id="about" paddingTop={"50px"}>
-      <Heading
-        textAlign={"center"}
-        size={"2xl"}
-        //  color="rgb(14, 36, 49)"
-      >
+    <Container maxW={"80%"} id="about" paddingTop={"150px"}>
+      <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
         About
       </Heading>
       <br />
@@ -34,7 +30,7 @@ export function About() {
           <Image
             boxShadow={"rgba(43, 64, 70, 0.14) 0px 12px 32px"}
             margin={"auto"}
-            width={{ lg: "50%", md: "60%", sm: "100%" }}
+            width={{ lg: "65%", md: "60%", sm: "100%" }}
             borderRadius={"10px"}
             src="https://avatars.githubusercontent.com/u/107472942?v=4"
           />
@@ -42,9 +38,9 @@ export function About() {
         <GridItem display={"flex"} textAlign={"left"}>
           <Box margin={"auto"}>
             <Heading
-              // size={{ lg: "lg", md: "md", sm: "md" }}
               fontSize={{ lg: "25px", md: "25px", sm: "20px" }}
-              // color="rgb(14, 36, 49)"
+              size={{ lg: "lg", md: "md", sm: "md" }}
+              color="rgb(14, 36, 49)"
             >
               Hi ,👋 I am Satan Kumar Sharma
             </Heading>
@@ -53,12 +49,15 @@ export function About() {
               fontStyle="italic"
               fontSize={{ lg: "22px", md: "18px", sm: "16px" }}
             >
-              Full stack developer who loves to build new things is a
-              passionate, driven student who likes to solve real world problems.
+              Full Stack Web Developer with a specialization in MERN stack,
+              dedicated to developing creative web applications that enhance
+              user experiences. The skilled, attentive, and collaborative
+              developer is always ready to learn something new and strengthen
+              skills.
             </Text>
           </Box>
         </GridItem>
       </Grid>
     </Container>
   );
-}
+};

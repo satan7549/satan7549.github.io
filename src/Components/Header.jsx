@@ -1,71 +1,112 @@
 import {
+  Button,
+  Grid,
+  Heading,
+  GridItem,
+  Image,
+  Link,
   Box,
   Flex,
-  Image,
-  // Stack,
-  Text,
-  useColorMode,
-  useMediaQuery,
 } from "@chakra-ui/react";
-import React from "react";
+import { useEffect, useRef } from "react";
+import { init } from "ityped";
 
-export const Header = () => {
-  const { colorMode } = useColorMode();
-  const isDark = colorMode === "dark";
-  const { isNotSmallerScreen } = useMediaQuery("(min-width:480px)");
+export function Header() {
+  const textRef = useRef();
+
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      backDelay: 2000,
+      backSpeed: 70,
+      strings: ["Full Stack Developer.", "Designer.","Problem Solver."],
+    });
+  }, []);
 
   return (
-    <Box m="auto" w="90%" >
-      {/* <Circle
-        position="absolute"
-        bg="blue.100"
-        opacity="0.1"
-        w="300px"
-        h="300px"
-        alignSelf="flex-end"
-      /> */}
-      <Flex
-        // spacing="200px"
-        direction={ isNotSmallerScreen ? "row" : "column" }
-        p={isNotSmallerScreen ? "32" : "0"}
-        // alignSelf="flex-start"
-        justifyContent="center"
-        border="1px solid red"
-      >
-        <Box
-          // mt={isNotSmallerScreen ? "0" : 16}
-          // align="flex-start"
-          border="1px solid blue"
-        >
-          <Text fontSize="5xl" fontWeight="semibold">
-            Hi, I am
-          </Text>
-          <Text
-            fontSize="5xl"
-            fontWeight="bold"
-            bgGradient="linear(to-r,cyan.400, blue.500, purple.600)"
-            bgClip="text"
+    <Grid
+      paddingTop={"150px"}
+      maxW={"80%"}
+      id="hero"
+      margin={"auto"}
+      gridTemplateColumns={{
+        lg: "repeat(2,1fr)",
+        md: "repeat(1,1fr)",
+        sm: "repeat(1,1fr)",
+      }}
+      gap="30px"
+    >
+      <GridItem display={"flex"} textAlign="left" alignItems={"center"}>
+        <Box>
+          <Heading
+            size={{ lg: "2xl", md: "2xl", sm: "2xl", base: "xl" }}
+            color="rgb(8, 111, 143)"
+            marginBottom={{ lg: "10px" }}
           >
-            Satan Kumar Sharma
-          </Text>
-          <Text color={isDark ? "gray.200" : "gray.500"}>
-            Full stack developer who loves to build new things is a passionate,
-            driven student who likes to solve real world problems.
-          </Text>
+            SATAN SHARMA
+          </Heading>
+          <Heading
+            fontWeight={"normal"}
+            size={{ lg: "lg", md: "lg", sm: "md", base: "md" }}
+            color="rgb(90,90,90)"
+            marginBottom={"16px"}
+          >
+            I'm a {" "}
+            <span
+              style={{
+                fontSize: "inherit",
+                // color: "crimson",
+                color:"#c9184a",
+                fontWeight: "bold",
+              }}
+              ref={textRef}
+            ></span>
+          </Heading>
+          <Flex gap={"10px"} wrap={"wrap"}>
+            <Link href="https://drive.google.com/uc?export=download&id=1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz">
+              <Button
+                bg={"rgb(1, 75, 97);"}
+                _hover={{ bg: "rgb(14, 129, 165)" }}
+                color="white"
+                variant={"solid"}
+                width="100px"
+                height={"40px"}
+                borderRadius="3px"
+                marginBottom={"10px"}
+                fontSize="16px"
+              >
+                Resume
+              </Button>
+            </Link>
+            <Link
+              href="https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
+              target={"_blank"}
+              textDecoration="none"
+            >
+              <Button
+                bg={"rgb(1, 75, 97);"}
+                _hover={{ bg: "rgb(14, 129, 165)" }}
+                color="white"
+                variant={"solid"}
+                width="120px"
+                height={"40px"}
+                borderRadius="3px"
+                marginBottom={"10px"}
+                fontSize="16px"
+                // textDecoration="none"
+              >
+                View Resume
+              </Button>
+            </Link>
+          </Flex>
         </Box>
-        <Box border="1px solid black">
-          <Image
-            // align="center"
-            // mt={isNotSmallerScreen ? "0" : "12"}
-            // mb={isNotSmallerScreen ? "0" : "12"}
-            // borderRadius="full"
-            // backgroundColor="transparent"
-            boxShadow="lg"
-            boxSize="300px"
-            src="https://avatars.githubusercontent.com/u/107472942?v=4"
-          />
-        </Box>
-      </Flex>
-    </Box>
+      </GridItem>
+      <GridItem>
+        <Image
+          width={"100%"}
+          src="https://camo.githubusercontent.com/c1dcb74cc1c1835b1d716f5051499a2814c683c806b15f04b0eba492863703e9/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966"
+        />
+      </GridItem>
+    </Grid>
   );
-};
+}
