@@ -1,14 +1,12 @@
-import { Icon, Menu, MenuButton, MenuItem, MenuList ,Link} from "@chakra-ui/react";
+import { Icon, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import React from "react";
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 import { AiOutlineMenu } from "react-icons/ai";
 const Navmenu = () => {
   return (
     <Menu>
       <MenuButton>
-        <Icon as={AiOutlineMenu}
-         width="20px" h={"20px"}
-          />
+        <Icon as={AiOutlineMenu} width="20px" h={"20px"} />
       </MenuButton>
       <MenuList>
         <MenuItem>

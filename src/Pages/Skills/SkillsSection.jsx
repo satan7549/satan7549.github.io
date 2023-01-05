@@ -23,7 +23,7 @@ import {
 
 export function SkillsSection() {
   return (
-    <Container maxW={"80%"} id="skills" paddingTop={"150px"}>
+    <Container maxW={"80%"} id="skills" paddingTop={"120px"}>
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
       Technical Skills
       </Heading>

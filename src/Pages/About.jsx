@@ -10,7 +10,7 @@ import {
 
 export const About = () => {
   return (
-    <Container maxW={"80%"} id="about" paddingTop={"150px"}>
+    <Container maxW={"80%"} id="about" paddingTop={"120px"}>
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
         About
       </Heading>

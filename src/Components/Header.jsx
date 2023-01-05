@@ -51,7 +51,7 @@ export function Header() {
             color="rgb(90,90,90)"
             marginBottom={"16px"}
           >
-            I'm a {" "}
+            I am a {" "}
             <span
               style={{
                 fontSize: "inherit",

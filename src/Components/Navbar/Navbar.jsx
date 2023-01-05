@@ -1,4 +1,4 @@
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 import {
   Container,
   Heading,
@@ -6,15 +6,10 @@ import {
   Flex,
   Box,
   useMediaQuery,
-  Link
 } from "@chakra-ui/react";
 import Navmenu from "./Navmenu";
 export default function Navbar() {
-
-
-
   const [isLargerThan800] = useMediaQuery("(min-width: 1050px)");
-
 
   const name = "<Satan/>";
   return (
