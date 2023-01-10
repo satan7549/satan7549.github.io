@@ -14,18 +14,18 @@ import {
   SiExpress,
 } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
-import {
-  Container,
-  Grid,
-  GridItem,
-  Heading,
-} from "@chakra-ui/react";
+import { Container, Grid, GridItem, Heading } from "@chakra-ui/react";
 
 export function SkillsSection() {
   return (
-    <Container maxW={"80%"} id="skills" paddingTop={"120px"}>
+    <Container
+      paddingTop={"120px"}
+      maxW={"80%"}
+      id="skills"
+      // boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px;"}
+    >
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
-      Technical Skills
+        Technical Skills
       </Heading>
       <br />
       <Grid

@@ -6,6 +6,7 @@ import {
   Flex,
   Box,
   useMediaQuery,
+  Button,
 } from "@chakra-ui/react";
 import Navmenu from "./Navmenu";
 export default function Navbar() {
@@ -26,13 +27,14 @@ export default function Navbar() {
       zIndex={"10"}
     >
       <Flex justifyContent={"space-between"} width={"100%"}>
-        <Box>
+        <Box _hover={{ cursor: "pointer" }}>
           <Link
             to="hero"
             smooth={true}
             duration={1000}
             spy={true}
             hashSpy={true}
+            activeClass="active"
           >
             <Heading size={{ lg: "lg", md: "lg", sm: "md" }}>{name}</Heading>
           </Link>
@@ -51,9 +53,11 @@ export default function Navbar() {
                 duration={1000}
                 spy={true}
                 hashSpy={true}
-                activeClass="active"
+                // activeClass="active"
               >
-                <Text _hover={{ borderBottom: "5px solid" }}>About Me</Text>
+                <Text _hover={{ borderBottom: "5px solid", cursor: "pointer" }}>
+                  About Me
+                </Text>
               </Link>
               <Link
                 to="skills"
@@ -62,7 +66,9 @@ export default function Navbar() {
                 spy={true}
                 hashSpy={true}
               >
-                <Text _hover={{ borderBottom: "5px solid" }}>Skills</Text>
+                <Text _hover={{ borderBottom: "5px solid", cursor: "pointer" }}>
+                  Skills
+                </Text>
               </Link>
               <Link
                 to="projects"
@@ -71,7 +77,9 @@ export default function Navbar() {
                 spy={true}
                 hashSpy={true}
               >
-                <Text _hover={{ borderBottom: "5px solid" }}>Projects</Text>
+                <Text _hover={{ borderBottom: "5px solid", cursor: "pointer" }}>
+                  Projects
+                </Text>
               </Link>
               <Link
                 to="contact"
@@ -80,9 +88,11 @@ export default function Navbar() {
                 spy={true}
                 hashSpy={true}
               >
-                <Text _hover={{ borderBottom: "5px solid" }}>Contact</Text>
+                <Text _hover={{ borderBottom: "5px solid", cursor: "pointer" }}>
+                  Contact
+                </Text>
               </Link>
-              {/* <a href="https://drive.google.com/uc?export=download&id=1eans4rcFvq5Ex5I6EhzqAKKDyMhiQ4pT">
+              <a href="https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing" target="_blank" >
                 <Button
                   bg={"rgb(1, 75, 97);"}
                   _hover={{ bg: "rgb(14, 129, 165)" }}
@@ -92,7 +102,7 @@ export default function Navbar() {
                 >
                   Resume
                 </Button>
-              </a> */}
+              </a>
             </>
           ) : (
             <Navmenu />
