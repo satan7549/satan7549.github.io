@@ -4,7 +4,9 @@ import Contact from "./Components/Contact";
 import { Header } from "./Components/Header";
 import Navbar from "./Components/Navbar/Navbar";
 import { About } from "./Pages/About";
+import ContactSection from "./Pages/ContactSection";
 import GithubStatus from "./Pages/GithubStatus";
+import { ProjectsSection } from "./Pages/Projects/ProjectSection";
 import { SkillsSection } from "./Pages/Skills/SkillsSection";
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
       <Header />
       <About />
       <SkillsSection />
+      <ProjectsSection />
       <GithubStatus />
+      <ContactSection />
     </Container>
   );
 }

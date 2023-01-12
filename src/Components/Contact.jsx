@@ -1,7 +1,7 @@
-import { Container, Flex, Icon, Link } from "@chakra-ui/react";
 import React from "react";
-import { BiPhoneCall, BiEnvelope } from "react-icons/bi";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { Container, Flex, Icon, Link } from "@chakra-ui/react";
+import { BiEnvelope } from "react-icons/bi";/*BiPhoneCall*/
+import { BsGithub, BsLinkedin,BsWhatsapp } from "react-icons/bs";
 
 const Contact = () => {
   return (
@@ -34,7 +34,7 @@ const Contact = () => {
             _hover={{ color: "rgb(47,230,100)", cursor: "pointer" }}
             width={"70%"}
             height="70%"
-            as={BiPhoneCall}
+            as={BsWhatsapp}
           />
         </Link>
         <Link href="https://github.com/satan7549" target={"_blank"}>

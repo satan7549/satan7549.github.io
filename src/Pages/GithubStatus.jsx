@@ -12,7 +12,7 @@ import GitHubCalendar from "react-github-calendar";
 const GithubStatus = () => {
   return (
     <Container
-      maxW={"80%"}
+      maxW={"90%"}
       paddingTop={"120px"}
       // paddingBottom="80px"
     >

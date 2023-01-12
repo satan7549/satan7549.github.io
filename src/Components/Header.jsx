@@ -26,7 +26,7 @@ export function Header() {
   return (
     <Grid
       paddingTop={"150px"}
-      maxW={"80%"}
+      maxW={"90%"}
       id="hero"
       margin={"auto"}
       gridTemplateColumns={{

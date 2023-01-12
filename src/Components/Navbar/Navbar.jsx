@@ -92,10 +92,10 @@ export default function Navbar() {
                   Contact
                 </Text>
               </Link>
-              <a href="https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing" target="_blank" >
+              <a href="https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing" target="_blank"  >
                 <Button
                   bg={"rgb(1, 75, 97);"}
-                  _hover={{ bg: "rgb(14, 129, 165)" }}
+                  _hover={{ bg: "rgb(14, 129, 165)" }}                
                   color="white"
                   h="30px"
                   variant={"solid"}

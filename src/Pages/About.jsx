@@ -11,7 +11,7 @@ import {
 export const About = () => {
   return (
     <Container
-      maxW={"80%"}
+      maxW={"90%"}
       id="about"
       paddingTop={"120px"}
 

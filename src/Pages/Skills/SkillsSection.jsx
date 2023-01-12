@@ -20,7 +20,7 @@ export function SkillsSection() {
   return (
     <Container
       paddingTop={"120px"}
-      maxW={"80%"}
+      maxW={"90%"}
       id="skills"
       // boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px;"}
     >
