@@ -20,13 +20,7 @@ import ContactSectionImage from "../Utilities/ContactSection_Img.png";
 
 const ContactSection = () => {
   return (
-    <Container
-      maxW={"90%"}
-      id="contact"
-      paddingTop={"120px"}
-      pb={"50px"}
-      // boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
-    >
+    <Container maxW={"90%"} id="contact" paddingTop={"120px"} pb={"50px"}>
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
         Contact
       </Heading>
@@ -68,57 +62,63 @@ const ContactSection = () => {
             >
               Get in Touch
             </Heading>
-            <FormControl isRequired>
-              <FormLabel>Name</FormLabel>
-
-              <InputGroup>
-                <InputLeftElement children={<BsPerson />} />
-                <Input
-                  type="text"
-                  _hover={{ borderColor: "black" }}
-                  name="name"
-                  placeholder="Your Name"
-                />
-              </InputGroup>
-            </FormControl>
-
-            <FormControl isRequired>
-              <FormLabel>Email</FormLabel>
-
-              <InputGroup>
-                <InputLeftElement children={<MdOutlineEmail />} />
-                <Input
-                  type="email"
-                  _hover={{ borderColor: "black" }}
-                  name="email"
-                  placeholder="Your Email"
-                />
-              </InputGroup>
-            </FormControl>
-
-            <FormControl isRequired>
-              <FormLabel>Message</FormLabel>
-
-              <Textarea
-                _hover={{ borderColor: "black" }}
-                name="message"
-                placeholder="Your Message"
-                rows={3}
-                resize="none"
-              />
-            </FormControl>
-
-            <Button
-              colorScheme="blue"
-              bg="blue.400"
-              color="white"
-              _hover={{
-                bg: "blue.500",
-              }}
-              isFullWidth
+            <form
+              style={{ width: "100%" }}
+              target="_blank"
+              action="https://formsubmit.co/5957675535b8962e3e2f31f2638049c1"
+              method="POST"
             >
-              Send Message
-            </Button>
+              <FormControl isRequired>
+                <FormLabel>Name</FormLabel>
+                <InputGroup>
+                  <InputLeftElement children={<BsPerson />} />
+                  <Input
+                    type="text"
+                    _hover={{ borderColor: "black" }}
+                    name="name"
+                    placeholder="Your Name"
+                  />
+                </InputGroup>
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel>Email</FormLabel>
+
+                <InputGroup>
+                  <InputLeftElement children={<MdOutlineEmail />} />
+                  <Input
+                    type="email"
+                    _hover={{ borderColor: "black" }}
+                    name="email"
+                    placeholder="Your Email"
+                  />
+                </InputGroup>
+              </FormControl>
+
+              <FormControl isRequired>
+                <FormLabel>Message</FormLabel>
+
+                <Textarea
+                  _hover={{ borderColor: "black" }}
+                  name="message"
+                  placeholder="Your Message"
+                  rows={3}
+                  resize="none"
+                />
+              </FormControl>
+              <Button
+                type="submit"
+                mt={2}
+                colorScheme="blue"
+                bg="blue.400"
+                color="white"
+                _hover={{
+                  bg: "blue.500",
+                }}
+                isFullWidth
+              >
+                Send Message
+              </Button>
+            </form>
           </VStack>
         </GridItem>
       </Grid>

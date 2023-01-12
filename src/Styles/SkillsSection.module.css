@@ -8,11 +8,15 @@
   .reduxIcon:hover {
     color: rgb(118, 76, 183);
   }
+  .nextIcon:hover{
+    color: black;
+  }
   .jsIcon:hover {
     color: rgb(247, 223, 30);
   }
-  .muiIcon:hover {
-    color: rgb(0, 129, 203);
+  .cuiIcon:hover {
+   color: rgb(79,209,197)
+    /* color: rgb(0, 129, 203); */
   }
   .htmlIcon:hover {
     color: rgb(233, 98, 40);

@@ -14,7 +14,6 @@ const GithubStatus = () => {
     <Container
       maxW={"90%"}
       paddingTop={"120px"}
-      // paddingBottom="80px"
     >
       <Heading textAlign={"center"} size={"xl"} color="rgb(14, 36, 49)">
         Github Calendar
@@ -49,14 +48,14 @@ const GithubStatus = () => {
         <GridItem>
           <Image
             width={"100%"}
-            align={"cen"}
+            align={"center"}
             src="https://github-readme-stats.vercel.app/api?username=satan7549&show_icons=true&locale=en"
           />
         </GridItem>
         <GridItem>
           <Image
             width={"100%"}
-            align={"cen"}
+            align={"center"}
             src="https://github-readme-streak-stats.herokuapp.com/?user=satan7549&"
           />
         </GridItem>

@@ -9,8 +9,8 @@ import {
   SiHtml5,
   SiCss3,
   SiReact,
-  // SiRedux,
   SiChakraui,
+  // SiRedux,
   // SiMongodb,
 } from "react-icons/si";
 // import { FaNodeJs } from "react-icons/fa";
@@ -63,24 +63,7 @@ const projects = [
       <SiCss3 className={styles.stackIcon} />,
     ],
   },
-  // {
-  //   name: "Geekbuying Clone",
-  //   img: "/Geekbuying.png",
-  //   link: "https://gorgeous-daffodil-6e6d25.netlify.app/",
-  //   git: "https://github.com/priyankadora20/punchy-substance-1301",
-  //   about:
-  //     "Geekbuying is an E-commerce website which sells all consumer electronic products",
-  //   stacks: [
-  //     <SiReact className={styles.stackIcon} />,
-  //     <SiRedux className={styles.stackIcon} />,
-  //     <SiChakraui className={styles.stackIcon} />,
-  //     <SiJavascript className={styles.stackIcon} />,
-  //     <SiHtml5 className={styles.stackIcon} />,
-  //     <SiCss3 className={styles.stackIcon} />,
-  //     <SiMongodb className={styles.stackIcon} />,
-  //     <FaNodeJs className={styles.stackIcon} />,
-  //   ],
-  // },
+  
 ];
 
 export function ProjectsSection() {

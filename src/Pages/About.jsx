@@ -7,15 +7,14 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
+import Profile_Img from "../Utilities/My_Img.png";
 
 export const About = () => {
   return (
     <Container
       maxW={"90%"}
       id="about"
-      paddingTop={"120px"}
-
-      // boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
+      paddingTop={"120px"}     
     >
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
         About
@@ -29,23 +28,25 @@ export const About = () => {
           md: "repeat(1,1fr)",
           sm: "repeat(1,1fr)",
         }}
-        alignItems="center"
         gap={"50px"}
+        p={4}
+        borderRadius="10px"
+        boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
       >
         <GridItem>
           <Image
-            boxShadow={"rgba(43, 64, 70, 0.14) 0px 12px 32px"}
             margin={"auto"}
             width={{ lg: "65%", md: "60%", sm: "100%" }}
             borderRadius={"10px"}
-            src="https://avatars.githubusercontent.com/u/107472942?v=4"
+            backdropFilter={"blur(2px)"}
+            src={Profile_Img}
           />
         </GridItem>
-        <GridItem display={"flex"} textAlign={"left"}>
+        <GridItem display={"flex"}  textAlign={{lg:"left",md:"justify",sm:"justify",base:"justify"}}>
           <Box margin={"auto"}>
             <Heading
               fontSize={{ lg: "25px", md: "25px", sm: "20px" }}
-              size={{ lg: "lg", md: "md", sm: "md" }}
+              textAlign={{lg:"left",md:"center",sm:"center",base:"center"}}
               color="rgb(14, 36, 49)"
             >
               Hi ,👋 I am Satan Kumar Sharma

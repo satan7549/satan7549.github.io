@@ -9,10 +9,12 @@ import {
   Button,
 } from "@chakra-ui/react";
 import Navmenu from "./Navmenu";
+
 export default function Navbar() {
   const [isLargerThan800] = useMediaQuery("(min-width: 1050px)");
 
   const name = "<SATAN/>";
+
   return (
     <Container
       shadow={"rgba(43, 64, 70, 0.14) 0px 12px 32px"}
@@ -32,16 +34,11 @@ export default function Navbar() {
             to="hero"
             smooth={true}
             duration={1000}
-            spy={true}
+            spy={false}
             hashSpy={true}
             activeClass="active"
           >
-            <Heading
-              // size={{ lg: "lg", md: "lg", sm: "md" }}
-              fontFamily={"Moon Dance"}
-              fontSize="40px"
-              // fontWeight="bold"
-            >
+            <Heading fontFamily={"Moon Dance"} fontSize="40px">
               {name}
             </Heading>
           </Link>

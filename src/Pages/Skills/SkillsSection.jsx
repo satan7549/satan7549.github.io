@@ -4,14 +4,18 @@ import { GrReactjs } from "react-icons/gr";
 import {
   SiRedux,
   SiJavascript,
-  SiMaterialui,
   SiHtml5,
   SiCss3,
   SiNodedotjs,
   SiMongodb,
-  SiNpm,
-  SiPostman,
   SiExpress,
+  SiChakraui,
+  SiTypescript,
+  SiNextdotjs,
+  // SiNpm,
+  // SiPostman,
+  // SiJson,
+  // SiMaterialui,
 } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { Container, Grid, GridItem, Heading } from "@chakra-ui/react";
@@ -22,7 +26,6 @@ export function SkillsSection() {
       paddingTop={"120px"}
       maxW={"90%"}
       id="skills"
-      // boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px;"}
     >
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
         Technical Skills
@@ -33,9 +36,10 @@ export function SkillsSection() {
           lg: "repeat(6,1fr)",
           md: "repeat(4,1fr)",
           sm: "repeat(3,1fr)",
-          base:"repeat(2,1fr)"
+          base: "repeat(2,1fr)",
         }}
         gridTemplateRows="auto"
+        gap={5}
         // gridTemplateRows={{ lg: "repeat(2,1fr)" }}
       >
         <GridItem>
@@ -60,22 +64,23 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
+            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+            skill="Next JS"
+            icon={
+              <SiNextdotjs
+                className={`${styles.skillIcon} ${styles.nextIcon}`}
+              />
+            }
+          />
+        </GridItem>
+
+        <GridItem>
+          <SkillCard
             hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
             skill="JavaScript"
             icon={
               <SiJavascript
                 className={`${styles.skillIcon} ${styles.jsIcon}`}
-              />
-            }
-          />
-        </GridItem>
-        <GridItem>
-          <SkillCard
-            hover={"rgba(0, 129, 203, 0.4) 0px 10px 20px 4px"}
-            skill="Material Ui"
-            icon={
-              <SiMaterialui
-                className={`${styles.skillIcon} ${styles.muiIcon}`}
               />
             }
           />
@@ -100,6 +105,14 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
+          hover={"rgba(0, 129, 203, 0.4) 0px 10px 20px 4px"}
+          skill="Typescript"
+          icon={
+            <SiTypescript className={`${styles.skillIcon} ${styles.cssIcon}`} />
+          } />
+        </GridItem>
+        <GridItem>
+          <SkillCard
             hover={"rgba(95, 151, 89, 0.4) 0px 10px 20px 4px"}
             skill="Node"
             icon={
@@ -109,6 +122,7 @@ export function SkillsSection() {
             }
           />
         </GridItem>
+
         <GridItem>
           <SkillCard
             hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
@@ -140,22 +154,23 @@ export function SkillsSection() {
             }
           />
         </GridItem>
-        <GridItem>
+        {/* <GridItem>
           <SkillCard
             hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
             skill="Npm"
             icon={<SiNpm className={`${styles.skillIcon} ${styles.gitIcon}`} />}
           />
-        </GridItem>
+        </GridItem> */}
         <GridItem>
           <SkillCard
-            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
-            skill="Postman"
+            hover={"rgba(0, 129, 203, 0.4) 0px 10px 20px 4px"}
+            skill="Chakra Ui"
             icon={
-              <SiPostman className={`${styles.skillIcon} ${styles.gitIcon}`} />
+              <SiChakraui className={`${styles.skillIcon} ${styles.cuiIcon}`} />
             }
           />
         </GridItem>
+       
       </Grid>
     </Container>
   );

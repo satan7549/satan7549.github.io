@@ -7,10 +7,9 @@ const Contact = () => {
   return (
     <Container
       maxW={"5%"}
-      //   marginRight={"0px"}
       position={"fixed"}
       left="0px"
-      top={"50%"}
+      top={"40%"}
     >
       <Flex
         justifyContent="center"

@@ -30,14 +30,12 @@ export function ProjectCard({ name, img, git, link, stacks, about }) {
       bgSize="100%"
       bgBlendMode=""
       backgroundRepeat="no-repeat"
-      // border={"2px solid blue"}
     >
       <Box
         marginTop={isMobile ? "40%" : "50%"}
         backdropFilter={"blur(5px)"}
         padding={isMobile ? "5px" : "20px"}
         bg={"rgba(255,255,255,0.7)"}
-        // bg={"#eaf4f4"}
         margin="none"
         borderBottomRadius={"10px"}
         boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
