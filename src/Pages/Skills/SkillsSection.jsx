@@ -32,9 +32,11 @@ export function SkillsSection() {
         gridTemplateColumns={{
           lg: "repeat(6,1fr)",
           md: "repeat(4,1fr)",
-          sm: "repeat(2,1fr)",
+          sm: "repeat(3,1fr)",
+          base:"repeat(2,1fr)"
         }}
-        gridTemplateRows={{ lg: "repeat(2,1fr)" }}
+        gridTemplateRows="auto"
+        // gridTemplateRows={{ lg: "repeat(2,1fr)" }}
       >
         <GridItem>
           <SkillCard

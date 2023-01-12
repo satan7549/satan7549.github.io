@@ -12,7 +12,7 @@ import Navmenu from "./Navmenu";
 export default function Navbar() {
   const [isLargerThan800] = useMediaQuery("(min-width: 1050px)");
 
-  const name = "<Satan/>";
+  const name = "<SATAN/>";
   return (
     <Container
       shadow={"rgba(43, 64, 70, 0.14) 0px 12px 32px"}
@@ -36,11 +36,19 @@ export default function Navbar() {
             hashSpy={true}
             activeClass="active"
           >
-            <Heading size={{ lg: "lg", md: "lg", sm: "md" }}>{name}</Heading>
+            <Heading
+              // size={{ lg: "lg", md: "lg", sm: "md" }}
+              fontFamily={"Moon Dance"}
+              fontSize="40px"
+              // fontWeight="bold"
+            >
+              {name}
+            </Heading>
           </Link>
         </Box>
         <Flex
           justifyContent={"space-around"}
+          gap={"20px"}
           width="40%"
           fontSize={"20px"}
           fontWeight="500"
@@ -56,7 +64,7 @@ export default function Navbar() {
                 // activeClass="active"
               >
                 <Text _hover={{ borderBottom: "5px solid", cursor: "pointer" }}>
-                  About Me
+                  About
                 </Text>
               </Link>
               <Link
@@ -92,10 +100,13 @@ export default function Navbar() {
                   Contact
                 </Text>
               </Link>
-              <a href="https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing" target="_blank"  >
+              <a
+                href="https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
+                target="_blank"
+              >
                 <Button
                   bg={"rgb(1, 75, 97);"}
-                  _hover={{ bg: "rgb(14, 129, 165)" }}                
+                  _hover={{ bg: "rgb(14, 129, 165)" }}
                   color="white"
                   h="30px"
                   variant={"solid"}

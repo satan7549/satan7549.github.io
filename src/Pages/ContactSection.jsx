@@ -59,7 +59,9 @@ const ContactSection = () => {
         >
           <VStack spacing={4}>
             <Heading
+              fontFamily={"Moon Dance"}
               fontSize={{
+                lg: "4xl",
                 base: "2xl",
                 md: "3xl",
               }}
@@ -71,7 +73,12 @@ const ContactSection = () => {
 
               <InputGroup>
                 <InputLeftElement children={<BsPerson />} />
-                <Input type="text" name="name" placeholder="Your Name" />
+                <Input
+                  type="text"
+                  _hover={{ borderColor: "black" }}
+                  name="name"
+                  placeholder="Your Name"
+                />
               </InputGroup>
             </FormControl>
 
@@ -80,7 +87,12 @@ const ContactSection = () => {
 
               <InputGroup>
                 <InputLeftElement children={<MdOutlineEmail />} />
-                <Input type="email" name="email" placeholder="Your Email" />
+                <Input
+                  type="email"
+                  _hover={{ borderColor: "black" }}
+                  name="email"
+                  placeholder="Your Email"
+                />
               </InputGroup>
             </FormControl>
 
@@ -88,6 +100,7 @@ const ContactSection = () => {
               <FormLabel>Message</FormLabel>
 
               <Textarea
+                _hover={{ borderColor: "black" }}
                 name="message"
                 placeholder="Your Message"
                 rows={3}

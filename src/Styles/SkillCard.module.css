@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 140px;
+  /* width: 140px; */
   height: 120px;
   margin: 20px auto;
   padding-top: 20px;
@@ -14,8 +14,8 @@
 }
 .card:hover {
   box-shadow: rgba(43, 64, 70, 0.1) 0px 12px 44px;
-  /* width: 160px;
-    height: 140px; */
+  transform: scale(1.07);
+  transition:all 0.5s ease-in-out;
   background-color: rgb(8, 111, 143);
 }
 .card:hover > * {

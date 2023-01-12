@@ -1,3 +1,4 @@
+ @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400&display=swap');
 :root{
 --main-color: #12cc94;
 --background-color: #8492a6;
@@ -8,4 +9,15 @@
 *{
   font-family: 'Roboto', sans-serif
 }
+
+/* .main_container {
+  margin: 0;
+  background: linear-gradient(-45deg, #022436, #012f46, #842c2a, #c23d2a,#eaba44,#b19490);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+} */
+/* height: 100vh; */
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400&display=swap');

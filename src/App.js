@@ -8,12 +8,14 @@ import ContactSection from "./Pages/ContactSection";
 import GithubStatus from "./Pages/GithubStatus";
 import { ProjectsSection } from "./Pages/Projects/ProjectSection";
 import { SkillsSection } from "./Pages/Skills/SkillsSection";
+import Bg_img from "./Utilities/BG_Img.jpeg";
 
 function App() {
   return (
     <Container
-      //  bgImage={""}
-      bgColor={"#eaf4f4"}
+      className="main_container"
+      bgImage={Bg_img}
+      // bgColor={"#eaf4f4"}
       bgSize="100%"
       maxW={"100%"}
     >

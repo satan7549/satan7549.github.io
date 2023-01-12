@@ -42,6 +42,13 @@ export function Header() {
             size={{ lg: "2xl", md: "2xl", sm: "2xl", base: "xl" }}
             color="rgb(8, 111, 143)"
             marginBottom={{ lg: "10px" }}
+            fontFamily={"Moon Dance"}
+            fontWeight="bold"
+            _hover={{
+              cursor: "pointer",
+              transform: " scale(1.07)",
+              transition: "all 0.5s ease-in-out",
+            }}
           >
             SATAN SHARMA
           </Heading>
@@ -55,7 +62,6 @@ export function Header() {
             <span
               style={{
                 fontSize: "inherit",
-                // color: "crimson",
                 color: "#c9184a",
                 fontWeight: "bold",
               }}
@@ -78,7 +84,7 @@ export function Header() {
                 marginBottom={"10px"}
                 fontSize="16px"
               >
-               Download Resume
+                Download CV
               </Button>
             </Link>
             <Link
@@ -97,7 +103,7 @@ export function Header() {
                 marginBottom={"10px"}
                 fontSize="16px"
               >
-               Resume
+                View CV
               </Button>
             </Link>
           </Flex>
