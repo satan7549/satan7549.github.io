@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2f3ea4f.css",
-    "main.js": "/static/js/main.40cc4f43.js",
+    "main.css": "/static/css/main.fb6fdabd.css",
+    "main.js": "/static/js/main.96edf736.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Skin_Store_App_Img.PNG": "/static/media/Skin_Store_App_Img.f4b32de401a8356a405b.PNG",
     "static/media/Rentomojo_App_Img.PNG": "/static/media/Rentomojo_App_Img.a305595ed42612f62cf3.PNG",
+    "static/media/Bg_Img.jpeg": "/static/media/Bg_Img.e68dc8fd39b186664d8c.jpeg",
     "static/media/HappyFox_App_Img.PNG": "/static/media/HappyFox_App_Img.01a3c55016f5c4c6fc4b.PNG",
     "static/media/ContactSection_Img.png": "/static/media/ContactSection_Img.660d66774540729b1019.png",
     "index.html": "/index.html",
-    "main.a2f3ea4f.css.map": "/static/css/main.a2f3ea4f.css.map",
-    "main.40cc4f43.js.map": "/static/js/main.40cc4f43.js.map",
+    "main.fb6fdabd.css.map": "/static/css/main.fb6fdabd.css.map",
+    "main.96edf736.js.map": "/static/js/main.96edf736.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2f3ea4f.css",
-    "static/js/main.40cc4f43.js"
+    "static/css/main.fb6fdabd.css",
+    "static/js/main.96edf736.js"
   ]
 }
