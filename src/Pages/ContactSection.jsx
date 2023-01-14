@@ -106,14 +106,16 @@ const ContactSection = () => {
                 />
               </FormControl>
               <Button
-                type="submit"
                 mt={2}
-                colorScheme="blue"
-                bg="blue.400"
+                type="submit"
+                bg={"rgb(1, 75, 97);"}
+                _hover={{ bg: "rgb(14, 129, 165)" }}
                 color="white"
-                _hover={{
-                  bg: "blue.500",
-                }}
+                variant={"solid"}
+                h="40px"
+                borderRadius="3px"
+                marginBottom={"10px"}
+                fontSize="16px"
                 isFullWidth
               >
                 Send Message

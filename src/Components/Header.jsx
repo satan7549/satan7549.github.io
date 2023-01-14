@@ -78,8 +78,8 @@ export function Header() {
                 _hover={{ bg: "rgb(14, 129, 165)" }}
                 color="white"
                 variant={"solid"}
-                // width="100px"
-                height={"40px"}
+                // width="120px"
+                h="35px"
                 borderRadius="3px"
                 marginBottom={"10px"}
                 fontSize="16px"
@@ -98,7 +98,7 @@ export function Header() {
                 color="white"
                 variant={"solid"}
                 // width="120px"
-                height={"40px"}
+                h="35px"
                 borderRadius="3px"
                 marginBottom={"10px"}
                 fontSize="16px"
