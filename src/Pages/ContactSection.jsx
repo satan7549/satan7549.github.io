@@ -108,7 +108,7 @@ const ContactSection = () => {
               <Button
                 mt={2}
                 type="submit"
-                bg={"rgb(1, 75, 97);"}
+                bg={"rgb(1, 75, 97)"}
                 _hover={{ bg: "rgb(14, 129, 165)" }}
                 color="white"
                 variant={"solid"}
