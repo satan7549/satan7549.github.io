@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.498caac1.css",
-    "main.js": "/static/js/main.eeeba27f.js",
+    "main.js": "/static/js/main.fd51f8df.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Skin_Store_App_Img.PNG": "/static/media/Skin_Store_App_Img.f4b32de401a8356a405b.PNG",
     "static/media/Rentomojo_App_Img.PNG": "/static/media/Rentomojo_App_Img.a305595ed42612f62cf3.PNG",
@@ -11,11 +11,11 @@
     "static/media/ContactSection_Img.png": "/static/media/ContactSection_Img.660d66774540729b1019.png",
     "index.html": "/index.html",
     "main.498caac1.css.map": "/static/css/main.498caac1.css.map",
-    "main.eeeba27f.js.map": "/static/js/main.eeeba27f.js.map",
+    "main.fd51f8df.js.map": "/static/js/main.fd51f8df.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.498caac1.css",
-    "static/js/main.eeeba27f.js"
+    "static/js/main.fd51f8df.js"
   ]
 }
