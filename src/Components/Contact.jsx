@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Flex, Icon, Link } from "@chakra-ui/react";
 import { BiEnvelope } from "react-icons/bi"; /*BiPhoneCall*/
-import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
   return (
