@@ -33,19 +33,6 @@ const Contact = () => {
             as={BiEnvelope}
           />
         </Link>
-        <Link href="https://wa.me/+918982385903" target={"_blank"}>
-          <Icon
-            _hover={{
-              color: "rgb(47,230,100)",
-              cursor: "pointer",
-              transform: " scale(1.4)",
-              transition: "all 0.5s ease-in-out",
-            }}
-            width={"70%"}
-            height="70%"
-            as={BsWhatsapp}
-          />
-        </Link>
         <Link href="https://github.com/satan7549" target={"_blank"}>
           <Icon
             _hover={{

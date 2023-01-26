@@ -1,6 +1,14 @@
-import { Icon, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import {
+  Icon,
+  Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Button,
+} from "@chakra-ui/react";
 import React from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { AiOutlineMenu } from "react-icons/ai";
 const Navmenu = () => {
   return (
@@ -9,7 +17,7 @@ const Navmenu = () => {
         <Icon as={AiOutlineMenu} width="20px" h={"20px"} />
       </MenuButton>
       <MenuList>
-        <Link
+        <ScrollLink
           to="about"
           smooth={true}
           duration={1000}
@@ -17,8 +25,8 @@ const Navmenu = () => {
           hashSpy={true}
         >
           <MenuItem>About</MenuItem>
-        </Link>
-        <Link
+        </ScrollLink>
+        <ScrollLink
           to="skills"
           smooth={true}
           duration={1000}
@@ -26,8 +34,8 @@ const Navmenu = () => {
           hashSpy={true}
         >
           <MenuItem>Skills</MenuItem>
-        </Link>
-        <Link
+        </ScrollLink>
+        <ScrollLink
           to="projects"
           smooth={true}
           duration={1000}
@@ -35,8 +43,8 @@ const Navmenu = () => {
           hashSpy={true}
         >
           <MenuItem>Projects</MenuItem>
-        </Link>
-        <Link
+        </ScrollLink>
+        <ScrollLink
           to="contact"
           smooth={true}
           duration={1000}
@@ -44,14 +52,35 @@ const Navmenu = () => {
           hashSpy={true}
         >
           <MenuItem>Contact</MenuItem>
-        </Link>
+        </ScrollLink>
         <MenuItem>
-          <a
+          <Link
+            href="https://drive.google.com/uc?export=download&id=1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz"
+            download={"Satan_Sharma_Resume.pdf"}
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
+              )
+            }
+            _hover={{ textDecoration: "none" }}
+          >
+            <Button
+              bg={"rgb(1, 75, 97);"}
+              _hover={{ bg: "rgb(14, 129, 165)" }}
+              color="white"
+              h="30px"
+              variant={"solid"}
+            >
+              Resume
+            </Button>
+          </Link>
+
+          {/* <Link
             href="https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
             target="_blank"
           >
             Resume
-          </a>
+          </Link> */}
         </MenuItem>
       </MenuList>
     </Menu>

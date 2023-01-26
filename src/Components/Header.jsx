@@ -70,40 +70,27 @@ export function Header() {
           </Heading>
           <Flex gap={"10px"} wrap={"wrap"}>
             <Link
-              _hover={{ textDecoration: "none" }}
               href="https://drive.google.com/uc?export=download&id=1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz"
-            >
-              <Button
-                bg={"rgb(1, 75, 97);"}
-                _hover={{ bg: "rgb(14, 129, 165)" }}
-                color="white"
-                variant={"solid"}
-                // width="120px"
-                h="35px"
-                borderRadius="3px"
-                marginBottom={"10px"}
-                fontSize="16px"
-              >
-                Download CV
-              </Button>
-            </Link>
-            <Link
-              href="https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
-              target={"_blank"}
+              download={"Satan_Sharma_Resume.pdf"}
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
+                )
+              }
               _hover={{ textDecoration: "none" }}
             >
               <Button
+                target={"_blank"}
                 bg={"rgb(1, 75, 97);"}
                 _hover={{ bg: "rgb(14, 129, 165)" }}
                 color="white"
                 variant={"solid"}
-                // width="120px"
                 h="35px"
                 borderRadius="3px"
                 marginBottom={"10px"}
                 fontSize="16px"
               >
-                View CV
+                Resume
               </Button>
             </Link>
           </Flex>

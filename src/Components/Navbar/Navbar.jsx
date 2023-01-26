@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import {
   Container,
   Heading,
@@ -7,6 +7,7 @@ import {
   Box,
   useMediaQuery,
   Button,
+  Link,
 } from "@chakra-ui/react";
 import Navmenu from "./Navmenu";
 
@@ -30,7 +31,7 @@ export default function Navbar() {
     >
       <Flex justifyContent={"space-between"} width={"100%"}>
         <Box _hover={{ cursor: "pointer" }}>
-          <Link
+          <ScrollLink
             to="hero"
             smooth={true}
             duration={1000}
@@ -41,7 +42,7 @@ export default function Navbar() {
             <Heading fontFamily={"Moon Dance"} fontSize="40px">
               {name}
             </Heading>
-          </Link>
+          </ScrollLink>
         </Box>
         <Flex
           justifyContent={"space-around"}
@@ -52,7 +53,7 @@ export default function Navbar() {
         >
           {isLargerThan800 ? (
             <>
-              <Link
+              <ScrollLink
                 to="about"
                 smooth={true}
                 duration={1000}
@@ -63,8 +64,8 @@ export default function Navbar() {
                 <Text _hover={{ borderBottom: "5px solid", cursor: "pointer" }}>
                   About
                 </Text>
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 to="skills"
                 smooth={true}
                 duration={1000}
@@ -74,8 +75,8 @@ export default function Navbar() {
                 <Text _hover={{ borderBottom: "5px solid", cursor: "pointer" }}>
                   Skills
                 </Text>
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 to="projects"
                 smooth={true}
                 duration={1000}
@@ -85,8 +86,8 @@ export default function Navbar() {
                 <Text _hover={{ borderBottom: "5px solid", cursor: "pointer" }}>
                   Projects
                 </Text>
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 to="contact"
                 smooth={true}
                 duration={1000}
@@ -96,10 +97,16 @@ export default function Navbar() {
                 <Text _hover={{ borderBottom: "5px solid", cursor: "pointer" }}>
                   Contact
                 </Text>
-              </Link>
-              <a
-                href="https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
-                target="_blank"
+              </ScrollLink>
+              <Link
+                href="https://drive.google.com/uc?export=download&id=1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz"
+                download={"Satan_Sharma_Resume.pdf"}
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
+                  )
+                }
+                _hover={{ textDecoration: "none" }}
               >
                 <Button
                   bg={"rgb(1, 75, 97);"}
@@ -110,7 +117,7 @@ export default function Navbar() {
                 >
                   Resume
                 </Button>
-              </a>
+              </Link>
             </>
           ) : (
             <Navmenu />

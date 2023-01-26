@@ -1,3 +1,4 @@
+import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 import {
   FormControl,
   FormLabel,
@@ -12,6 +13,12 @@ import {
   VStack,
   Container,
   Heading,
+  Box,
+  Flex,
+  Icon,
+  Text,
+  Spacer,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import React from "react";
 import { BsPerson } from "react-icons/bs";
@@ -62,6 +69,55 @@ const ContactSection = () => {
             >
               Get in Touch
             </Heading>
+
+            <SimpleGrid
+              boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}
+              padding="10px"
+              borderRadius={"5px"}
+              cursor="pointer"
+              gridTemplateColumns={{ lg: "repeat(2,1fr)" }}
+              gridTemplateRows="auto"
+              gap={"10px"}
+            >
+              <GridItem>
+                <Flex alignItems={"center"} gap={"10px"}>
+                  <Icon
+                    _hover={{
+                      color: "rgb(9,97,184)",
+                      cursor: "pointer",
+                      transform: " scale(1.4)",
+                      transition: "all 0.5s ease-in-out",
+                    }}
+                    as={PhoneIcon}
+                  />
+                  <Text fontSize={{ lg: "xl", md: "lg", sm: "sm", base: "sm" }}>
+                    +918982385903
+                  </Text>
+                </Flex>
+              </GridItem>
+              <GridItem
+                display={"flex"}
+                alignItems={"center"}
+                flexDir="row"
+                gap={"10px"}
+              >
+                <Flex alignItems={"center"} gap={"10px"}>
+                  <Icon
+                    _hover={{
+                      color: "rgb(9,97,184)",
+                      cursor: "pointer",
+                      transform: " scale(1.4)",
+                      transition: "all 0.5s ease-in-out",
+                    }}
+                    as={EmailIcon}
+                  />
+                  <Text fontSize={{ lg: "xl", md: "lg", sm: "sm", base: "sm" }}>
+                    satansharma7549@gmail.com
+                  </Text>
+                </Flex>
+              </GridItem>
+            </SimpleGrid>
+
             <form
               style={{ width: "100%" }}
               target="_blank"
