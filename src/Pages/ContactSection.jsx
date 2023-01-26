@@ -13,11 +13,9 @@ import {
   VStack,
   Container,
   Heading,
-  Box,
   Flex,
   Icon,
   Text,
-  Spacer,
   SimpleGrid,
 } from "@chakra-ui/react";
 import React from "react";
