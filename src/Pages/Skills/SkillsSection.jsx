@@ -58,7 +58,9 @@ export function SkillsSection() {
             hover={"rgba(118, 76, 183, 0.4) 0px 10px 20px 4px"}
             skill="Redux"
             icon={
-              <SiRedux className={`${styles.skillIcon} ${styles.reduxIcon}`} />
+              <SiRedux className={`${styles.skillIcon}
+              ${styles.reduxIcon}
+               `} />
             }
           />
         </GridItem>

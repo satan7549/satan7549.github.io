@@ -3,6 +3,7 @@ import styles from "../../Styles/ProjectsSection.module.css";
 import Skin_Store_Img from "../../Utilities/Projects.Images/Skin_Store_App_Img.PNG";
 import Rentomojo_App_img from "../../Utilities/Projects.Images/Rentomojo_App_Img.PNG";
 import HappFox_App_Img from "../../Utilities/Projects.Images/HappyFox_App_Img.PNG";
+import fashion_square from "../../Utilities/Projects.Images/fashion_square.png";
 
 import {
   SiJavascript,
@@ -10,17 +11,11 @@ import {
   SiCss3,
   SiReact,
   SiChakraui,
-  // SiRedux,
+  SiRedux,
   // SiMongodb,
 } from "react-icons/si";
 // import { FaNodeJs } from "react-icons/fa";
-import {
-  Container,
-  GridItem,
-  Heading,
-  SimpleGrid,
-} from "@chakra-ui/react";
-
+import { Container, GridItem, Heading, SimpleGrid } from "@chakra-ui/react";
 
 const projects = [
   {
@@ -63,13 +58,27 @@ const projects = [
       <SiCss3 className={styles.stackIcon} />,
     ],
   },
-  
+  {
+    name: "Limeroad.com-Clone",
+    img: fashion_square,
+    link: "https://fashi0n-square.netlify.app/",
+    git: "https://github.com/Avneesh002/Fashion-square",
+    about:
+      "Fashion square is a clone of Limeroad.com. it is a E-commerce website which is used to shop clothes and other products",
+    stacks: [
+      <SiReact className={styles.stackIcon} />,
+      <SiRedux className={styles.stackIcon} />,
+      <SiJavascript className={styles.stackIcon} />,
+      <SiChakraui className={styles.stackIcon} />,
+      <SiHtml5 className={styles.stackIcon} />,
+      <SiCss3 className={styles.stackIcon} />,
+    ],
+  },
 ];
 
 export function ProjectsSection() {
   return (
-    <Container maxW={"90%"} paddingTop={"120px"} id="projects" 
-    >
+    <Container maxW={"90%"} paddingTop={"120px"} id="projects">
       <Heading
         textAlign={"center"}
         marginBottom="50px"
@@ -78,11 +87,9 @@ export function ProjectsSection() {
       >
         Projects
       </Heading>
-      <SimpleGrid
-      spacing={50}
-      >
+      <SimpleGrid spacing={50}>
         {projects.map((project, i) => (
-          <GridItem key={i} >
+          <GridItem key={i}>
             <ProjectCard {...project} />
           </GridItem>
         ))}
