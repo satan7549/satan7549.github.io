@@ -71,7 +71,7 @@ export function Header() {
           <Flex gap={"10px"} wrap={"wrap"}>
             <Link
               href="https://drive.google.com/uc?export=download&id=1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz"
-              download={"Satan_Sharma_Resume.pdf"}
+              download={"Satan-Sharma-Resume.pdf"}
               onClick={() =>
                 window.open(
                   "https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
