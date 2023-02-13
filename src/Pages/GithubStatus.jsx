@@ -37,7 +37,7 @@ const GithubStatus = () => {
         boxShadow="rgba(50, 50, 105, 0.25) 0px 2px 10px 0px,rgba(0, 0, 0, 0.05) 0px 1px 1px 0px"
         borderRadius={"0px 50px 0px 50px"}
       >
-        <GitHubCalendar color={"teal"} username="satan7549" />
+        <GitHubCalendar hideTotalCount={true} hideColorLegend={true} color={"teal"} username="satan7549" />
       </Box>
       <br />
       <br />
