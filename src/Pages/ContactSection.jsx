@@ -17,13 +17,19 @@ import {
   Icon,
   Text,
   SimpleGrid,
+  useMediaQuery,
+  IconButton,
+  Stack,
+  Link,
 } from "@chakra-ui/react";
 import React from "react";
-import { BsPerson } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import ContactSectionImage from "../Utilities/ContactSection_Img.png";
 
 const ContactSection = () => {
+  const [isLargerThan475] = useMediaQuery("(min-width: 475px)");
+
   return (
     <Container maxW={"90%"} id="contact" paddingTop={"120px"} pb={"50px"}>
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
@@ -115,6 +121,41 @@ const ContactSection = () => {
                 </Flex>
               </GridItem>
             </SimpleGrid>
+            {isLargerThan475 ? null : (
+              <Stack
+                align="center"
+                justify="space-around"
+                direction={{ base: "row", md: "column" }}
+              >
+                <Link href="#">
+                  <IconButton
+                    aria-label="github"
+                    variant="ghost"
+                    size="lg"
+                    fontSize="3xl"
+                    icon={<BsGithub />}
+                    _hover={{
+                      bg: "blue.500",
+                      // color: useColorModeValue("white", "gray.700"),
+                    }}
+                    isRound
+                  />
+                </Link>
+                <Link href="#">
+                  <IconButton
+                    aria-label="linkedin"
+                    variant="ghost"
+                    size="lg"
+                    icon={<BsLinkedin size="28px" />}
+                    _hover={{
+                      bg: "blue.500",
+                      // color: useColorModeValue('white', 'gray.700'),
+                    }}
+                    isRound
+                  />
+                </Link>
+              </Stack>
+            )}
 
             <form
               style={{ width: "100%" }}
