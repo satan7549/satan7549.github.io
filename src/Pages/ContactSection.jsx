@@ -1,4 +1,3 @@
-import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 import {
   FormControl,
   FormLabel,
@@ -17,19 +16,15 @@ import {
   Icon,
   Text,
   SimpleGrid,
-  useMediaQuery,
-  IconButton,
-  Stack,
-  Link,
 } from "@chakra-ui/react";
 import React from "react";
-import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
+import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
+import { BsPerson } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
+import ContactIcon from "../Components/ContactIcons";
 import ContactSectionImage from "../Utilities/ContactSection_Img.png";
 
 const ContactSection = () => {
-  const [isLargerThan475] = useMediaQuery("(min-width: 475px)");
-
   return (
     <Container maxW={"90%"} id="contact" paddingTop={"120px"} pb={"50px"}>
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
@@ -44,6 +39,7 @@ const ContactSection = () => {
           lg: "repeat(2,1fr)",
           md: "repeat(2,1fr)",
           sm: "repeat(1,1fr)",
+          base: "repeat(1,1fr)",
         }}
         gap="30px"
         justifyContent={"center"}
@@ -108,9 +104,9 @@ const ContactSection = () => {
                 <Flex alignItems={"center"} gap={"10px"}>
                   <Icon
                     _hover={{
-                      color: "rgb(9,97,184)",
+                      color: "rgb(234,67,53)",
                       cursor: "pointer",
-                      transform: " scale(1.4)",
+                      transform: " scale(1.2)",
                       transition: "all 0.5s ease-in-out",
                     }}
                     as={EmailIcon}
@@ -121,42 +117,7 @@ const ContactSection = () => {
                 </Flex>
               </GridItem>
             </SimpleGrid>
-            {isLargerThan475 ? null : (
-              <Stack
-                align="center"
-                justify="space-around"
-                direction={{ base: "row", md: "column" }}
-              >
-                <Link href="#">
-                  <IconButton
-                    aria-label="github"
-                    variant="ghost"
-                    size="lg"
-                    fontSize="3xl"
-                    icon={<BsGithub />}
-                    _hover={{
-                      bg: "blue.500",
-                      // color: useColorModeValue("white", "gray.700"),
-                    }}
-                    isRound
-                  />
-                </Link>
-                <Link href="#">
-                  <IconButton
-                    aria-label="linkedin"
-                    variant="ghost"
-                    size="lg"
-                    icon={<BsLinkedin size="28px" />}
-                    _hover={{
-                      bg: "blue.500",
-                      // color: useColorModeValue('white', 'gray.700'),
-                    }}
-                    isRound
-                  />
-                </Link>
-              </Stack>
-            )}
-
+            <ContactIcon border={"1px solid red"} />
             <form
               style={{ width: "100%" }}
               target="_blank"
