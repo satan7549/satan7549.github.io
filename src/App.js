@@ -1,6 +1,5 @@
 import { Container } from "@chakra-ui/react";
 import "./App.css";
-import Contact from "./Components/Contact";
 import { Header } from "./Components/Header";
 import Navbar from "./Components/Navbar/Navbar";
 import { About } from "./Pages/About";
@@ -20,7 +19,6 @@ function App() {
       maxW={"100%"}
     >
       <Navbar />
-      <Contact />
       <Header />
       <About />
       <SkillsSection />
