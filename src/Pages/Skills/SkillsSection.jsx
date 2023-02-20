@@ -1,3 +1,4 @@
+import React from "react";
 import { SkillCard } from "./SkillCard";
 import styles from "../../Styles/SkillsSection.module.css";
 import { GrReactjs } from "react-icons/gr";
@@ -12,37 +13,24 @@ import {
   SiChakraui,
   SiTypescript,
   SiNextdotjs,
-  // SiNpm,
-  // SiPostman,
-  // SiJson,
-  // SiMaterialui,
 } from "react-icons/si";
-import { FaGitAlt } from "react-icons/fa";
-import { Container, Grid, GridItem, Heading } from "@chakra-ui/react";
+import { HStack, Box, Container, Heading } from "@chakra-ui/react";
 
-export function SkillsSection() {
+const SkillsSection = () => {
   return (
-    <Container
-      paddingTop={"120px"}
-      maxW={"90%"}
-      id="skills"
-    >
+    <Container paddingTop={"120px"} maxW={"90%"} id="skills">
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
         Technical Skills
       </Heading>
       <br />
-      <Grid
-        gridTemplateColumns={{
-          lg: "repeat(6,1fr)",
-          md: "repeat(4,1fr)",
-          sm: "repeat(3,1fr)",
-          base: "repeat(2,1fr)",
-        }}
-        gridTemplateRows="auto"
-        gap={5}
-        // gridTemplateRows={{ lg: "repeat(2,1fr)" }}
+      <HStack
+        display={{ lg: "flex", md: "flex", sm: "grid", base: "grid" }}
+        gap="10px"
+        justifyContent={"center"}
+        gridTemplateColumns={"repeat(2,1fr)"}
+        flexWrap={{ lg: "wrap", md: "wrap", sm: "nowrap" }}
       >
-        <GridItem>
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
             hover={"rgba(94, 211, 243, 0.4) 0px 5px 20px 2px"}
             skill="React"
@@ -52,19 +40,23 @@ export function SkillsSection() {
               />
             }
           />
-        </GridItem>
-        <GridItem>
+        </Box>
+
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
             hover={"rgba(118, 76, 183, 0.4) 0px 10px 20px 4px"}
             skill="Redux"
             icon={
-              <SiRedux className={`${styles.skillIcon}
+              <SiRedux
+                className={`${styles.skillIcon}
               ${styles.reduxIcon}
-               `} />
+               `}
+              />
             }
           />
-        </GridItem>
-        <GridItem>
+        </Box>
+
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
             hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
             skill="Next JS"
@@ -74,9 +66,9 @@ export function SkillsSection() {
               />
             }
           />
-        </GridItem>
+        </Box>
 
-        <GridItem>
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
             hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
             skill="JavaScript"
@@ -86,8 +78,9 @@ export function SkillsSection() {
               />
             }
           />
-        </GridItem>
-        <GridItem>
+        </Box>
+
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
             hover={"rgba(233, 98, 40, 0.4) 0px 10px 20px 4px"}
             skill="Html"
@@ -95,8 +88,9 @@ export function SkillsSection() {
               <SiHtml5 className={`${styles.skillIcon} ${styles.htmlIcon}`} />
             }
           />
-        </GridItem>
-        <GridItem>
+        </Box>
+
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
             hover={"rgba(37, 75, 221, 0.4) 0px 10px 20px 4px"}
             skill="Css"
@@ -104,16 +98,21 @@ export function SkillsSection() {
               <SiCss3 className={`${styles.skillIcon} ${styles.cssIcon}`} />
             }
           />
-        </GridItem>
-        <GridItem>
+        </Box>
+
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
-          hover={"rgba(0, 129, 203, 0.4) 0px 10px 20px 4px"}
-          skill="Typescript"
-          icon={
-            <SiTypescript className={`${styles.skillIcon} ${styles.cssIcon}`} />
-          } />
-        </GridItem>
-        <GridItem>
+            hover={"rgba(0, 129, 203, 0.4) 0px 10px 20px 4px"}
+            skill="Typescript"
+            icon={
+              <SiTypescript
+                className={`${styles.skillIcon} ${styles.cssIcon}`}
+              />
+            }
+          />
+        </Box>
+
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
             hover={"rgba(95, 151, 89, 0.4) 0px 10px 20px 4px"}
             skill="Node"
@@ -123,9 +122,9 @@ export function SkillsSection() {
               />
             }
           />
-        </GridItem>
+        </Box>
 
-        <GridItem>
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
             hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
             skill="MongoDb"
@@ -135,8 +134,9 @@ export function SkillsSection() {
               />
             }
           />
-        </GridItem>
-        <GridItem>
+        </Box>
+
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
             hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
             skill="Express"
@@ -146,24 +146,9 @@ export function SkillsSection() {
               />
             }
           />
-        </GridItem>
-        <GridItem>
-          <SkillCard
-            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
-            skill="Git"
-            icon={
-              <FaGitAlt className={`${styles.skillIcon} ${styles.gitIcon}`} />
-            }
-          />
-        </GridItem>
-        {/* <GridItem>
-          <SkillCard
-            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
-            skill="Npm"
-            icon={<SiNpm className={`${styles.skillIcon} ${styles.gitIcon}`} />}
-          />
-        </GridItem> */}
-        <GridItem>
+        </Box>
+
+        <Box width={{ lg: "170px", md: "170px" }}>
           <SkillCard
             hover={"rgba(0, 129, 203, 0.4) 0px 10px 20px 4px"}
             skill="Chakra Ui"
@@ -171,9 +156,10 @@ export function SkillsSection() {
               <SiChakraui className={`${styles.skillIcon} ${styles.cuiIcon}`} />
             }
           />
-        </GridItem>
-       
-      </Grid>
+        </Box>
+      </HStack>
     </Container>
   );
-}
+};
+
+export default SkillsSection;
