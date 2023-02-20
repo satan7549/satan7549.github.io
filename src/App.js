@@ -6,7 +6,8 @@ import { About } from "./Pages/About";
 import ContactSection from "./Pages/ContactSection";
 import GithubStatus from "./Pages/GithubStatus";
 import { ProjectsSection } from "./Pages/Projects/ProjectSection";
-import { SkillsSection } from "./Pages/Skills/SkillsSection";
+import SkillsSection from "./Pages/Skills/SkillsSection";
+import Tools from "./Tools/Tools";
 import Bg_img from "./Utilities/BG_Img.jpeg";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Header />
       <About />
       <SkillsSection />
+      <Tools />
       <ProjectsSection />
       <GithubStatus />
       <ContactSection />
