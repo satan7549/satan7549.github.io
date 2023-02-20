@@ -11,11 +11,7 @@ import Profile_Img from "../Utilities/My_Img.png";
 
 export const About = () => {
   return (
-    <Container
-      maxW={"90%"}
-      id="about"
-      paddingTop={"120px"}     
-    >
+    <Container maxW={"90%"} id="about" paddingTop={"120px"}>
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
         About
       </Heading>
@@ -42,11 +38,24 @@ export const About = () => {
             src={Profile_Img}
           />
         </GridItem>
-        <GridItem display={"flex"}  textAlign={{lg:"left",md:"justify",sm:"justify",base:"justify"}}>
+        <GridItem
+          display={"flex"}
+          textAlign={{
+            lg: "left",
+            md: "justify",
+            sm: "justify",
+            base: "justify",
+          }}
+        >
           <Box margin={"auto"}>
             <Heading
               fontSize={{ lg: "25px", md: "25px", sm: "20px" }}
-              textAlign={{lg:"left",md:"center",sm:"center",base:"center"}}
+              textAlign={{
+                lg: "left",
+                md: "center",
+                sm: "center",
+                base: "center",
+              }}
               color="rgb(14, 36, 49)"
             >
               Hi ,👋 I am Satan Kumar Sharma
