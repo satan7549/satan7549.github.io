@@ -1,11 +1,4 @@
-import {
-  Container,
-  Grid,
-  GridItem,
-  Heading,
-  Image,
-  Box,
-} from "@chakra-ui/react";
+import { Container, Heading, Image, Box, HStack } from "@chakra-ui/react";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 
@@ -37,7 +30,12 @@ const GithubStatus = () => {
         boxShadow="rgba(50, 50, 105, 0.25) 0px 2px 10px 0px,rgba(0, 0, 0, 0.05) 0px 1px 1px 0px"
         borderRadius={"0px 50px 0px 50px"}
       >
-        <GitHubCalendar hideTotalCount={true} hideColorLegend={true} color={"teal"} username="satan7549" />
+        <GitHubCalendar
+          hideTotalCount={true}
+          hideColorLegend={true}
+          color={"teal"}
+          username="satan7549"
+        />
       </Box>
       <br />
       <br />
@@ -46,22 +44,19 @@ const GithubStatus = () => {
       </Heading>
       <br />
       <br />
-      <Grid
-        templateColumns={{
-          lg: "repeat(2,1fr)",
-          md: "repeat(2,1fr)",
-          sm: "repeat(1,1fr)",
-        }}
-        gap="30px"
+      <HStack
+        display={"flex"}
+        gap="10px"
+        justifyContent={"center"}
+        gridTemplateColumns={"repeat(2,1fr)"}
+        flexWrap={"wrap"}
       >
         {ImgSrc.map((ele, i) => (
-          <GridItem
-            key={i}
-          >
-            <Image width={"100%"} align={"center"} src={ele.src} />
-          </GridItem>
+          <Box width={{ lg: "40%", md: "40%", sm: "40%", base: "90%" }} key={i}>
+            <Image w="full" h="full" align={"center"} src={ele.src} />
+          </Box>
         ))}
-      </Grid>
+      </HStack>
     </Container>
   );
 };
