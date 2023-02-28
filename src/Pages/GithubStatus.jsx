@@ -33,7 +33,7 @@ const GithubStatus = () => {
         <GitHubCalendar
           hideTotalCount={true}
           hideColorLegend={true}
-          color={"teal"}
+          // color="rgb(95,42,240)"
           username="satan7549"
         />
       </Box>

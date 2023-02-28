@@ -18,6 +18,15 @@ const Navmenu = () => {
       </MenuButton>
       <MenuList>
         <ScrollLink
+          to="hero"
+          smooth={true}
+          duration={1000}
+          spy={true}
+          hashSpy={true}
+        >
+          <MenuItem>Home</MenuItem>
+        </ScrollLink>
+        <ScrollLink
           to="about"
           smooth={true}
           duration={1000}
@@ -56,7 +65,7 @@ const Navmenu = () => {
         <MenuItem>
           <Link
             href="https://drive.google.com/uc?export=download&id=1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz"
-            download={"Satan-Sharma-Resume.pdf"}
+            download={"fw20_0536-Satan-Sharma-Resume.pdf"}
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
@@ -74,13 +83,6 @@ const Navmenu = () => {
               Resume
             </Button>
           </Link>
-
-          {/* <Link
-            href="https://drive.google.com/file/d/1sowK1pxE64cbONKcaB1Etc6JnvvMwJwz/view?usp=sharing"
-            target="_blank"
-          >
-            Resume
-          </Link> */}
         </MenuItem>
       </MenuList>
     </Menu>

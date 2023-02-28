@@ -65,11 +65,10 @@ export const About = () => {
               fontStyle="italic"
               fontSize={{ lg: "22px", md: "18px", sm: "16px" }}
             >
-              Full Stack Web Developer with a specialization in MERN stack,
-              dedicated to developing creative web applications that enhance
-              user experiences. The skilled, attentive, and collaborative
-              developer is always ready to learn something new and strengthen
-              skills.
+              Full Stack Web Developer specializing in MERN stack, dedicated to
+              developing creative web applications that enhance user
+              experiences. The skilled, attentive, and collaborative developer
+              is always ready to learn something new and strengthen skills.
             </Text>
           </Box>
         </GridItem>

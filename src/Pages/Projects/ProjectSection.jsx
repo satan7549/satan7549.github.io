@@ -23,7 +23,8 @@ const projects = [
     img: Skin_Store_Img,
     link: "https://skinsotre-clone-by-sattan.netlify.app/",
     git: "https://github.com/satan7549/Skin_Store_Clone",
-    about: "Skin Store is e-commerce website which offer Cosmetic Products. ",
+    about:
+      "Skinstore.com is an e-commerce website that offers a wide range of cosmetic products. This was an individual project.",
     stacks: [
       <SiReact className={styles.stackIcon} />,
       <SiChakraui className={styles.stackIcon} />,
@@ -37,7 +38,7 @@ const projects = [
     link: "https://glittering-liger-3137f9.netlify.app/",
     git: "https://github.com/Pushpendra-1697/Rentomojo.com-clone",
     about:
-      "It is an e-commerce website where you can take a wide range of products for rent. This was a Collaborative Project",
+      "It is an e-commerce website where you can take a wide range of products for rent. This was a Collaborative Project.",
     stacks: [
       <SiJavascript className={styles.stackIcon} />,
       <SiHtml5 className={styles.stackIcon} />,
@@ -51,7 +52,7 @@ const projects = [
     link: "https://cheerful-duckanoo-d5d1ea.netlify.app/",
     git: "https://github.com/NAYANKUMAR21/closed-mask-38",
     about:
-      "HappyFox is a customer relationship management solution that provides help desk and ticketing solutions to businesses across various industries",
+      "HappyFox is a customer relationship management solution that provides help desk and ticketing solutions to businesses across various industries.This was a Collaborative Project.",
     stacks: [
       <SiJavascript className={styles.stackIcon} />,
       <SiHtml5 className={styles.stackIcon} />,
@@ -64,7 +65,7 @@ const projects = [
     link: "https://fashi0n-square.netlify.app/",
     git: "https://github.com/Avneesh002/Fashion-square",
     about:
-      "Fashion square is a clone of Limeroad.com. it is a E-commerce website which is used to shop clothes and other products",
+      "Fashion square is a clone of Limeroad.com. it is an E-commerce website that is used to shop for clothes and other products.",
     stacks: [
       <SiReact className={styles.stackIcon} />,
       <SiRedux className={styles.stackIcon} />,
