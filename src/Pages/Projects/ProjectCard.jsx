@@ -55,6 +55,7 @@ export function ProjectCard({ name, img, git, link, stacks, about }) {
                   key={i}
                   transition=" all 0.2s ease-in-out"
                   _hover={{ transform: " scale(1.1)", transition: "0.8s" }}
+                  gap={"20px"}
                 >
                   {stack}
                 </Box>
@@ -142,7 +143,7 @@ export function ProjectCard({ name, img, git, link, stacks, about }) {
         )}
 
         <br />
-        <Text fontSize={{ lg: "2xl", md: "2xl", sm: "sm" }}>{about}</Text>
+        <Text textAlign={"justify"} fontSize={{ lg: "2xl", md: "2xl", sm: "sm" }}>{about}</Text>
       </Box>
     </Box>
   );

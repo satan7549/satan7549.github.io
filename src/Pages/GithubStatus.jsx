@@ -16,7 +16,7 @@ const GithubStatus = () => {
   ];
 
   return (
-    <Container maxW={"90%"} paddingTop={"120px"}>
+    <Container maxW={"90%"} paddingTop={"120px"} id="github">
       <Heading textAlign={"center"} size={"xl"} color="rgb(14, 36, 49)">
         Github Calendar
       </Heading>
