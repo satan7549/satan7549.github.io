@@ -143,7 +143,7 @@ export function ProjectCard({ name, img, git, link, stacks, about }) {
         )}
 
         <br />
-        <Text textAlign={"justify"} fontSize={{ lg: "2xl", md: "2xl", sm: "sm" }}>{about}</Text>
+        <Text textAlign={"justify"} fontSize={{ lg: "2xl", md: "2xl", sm: "sm" }} p={2} >{about}</Text>
       </Box>
     </Box>
   );
