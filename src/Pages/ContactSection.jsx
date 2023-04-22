@@ -172,7 +172,6 @@ const ContactSection = () => {
                 borderRadius="3px"
                 marginBottom={"10px"}
                 fontSize="16px"
-                isFullWidth
               >
                 Send Message
               </Button>
