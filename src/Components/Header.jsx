@@ -20,7 +20,7 @@ export function Header() {
       showCursor: true,
       backDelay: 2000,
       backSpeed: 70,
-      strings: ["Full Stack Developer.", "Designer.", "Problem Solver."],
+      strings: ["Full Stack Web Developer.", "Problem Solver."],
     });
   }, []);
 
