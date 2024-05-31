@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.4254c592.css",
-    "main.js": "/static/js/main.01afb4bb.js",
+    "main.css": "/static/css/main.ed4d4bb3.css",
+    "main.js": "/static/js/main.82965072.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/coder_boy.gif": "/static/media/coder_boy.37ef1e1a376ff1b6c967.gif",
     "static/media/Dukan_in_Img.png": "/static/media/Dukan_in_Img.10213eb7c9507b005a0a.png",
     "static/media/Skin_Store_App_Img.PNG": "/static/media/Skin_Store_App_Img.f4b32de401a8356a405b.PNG",
     "static/media/fashion_square.png": "/static/media/fashion_square.e7d38826189e29d35807.png",
@@ -11,12 +12,12 @@
     "static/media/BG_Img.jpeg": "/static/media/BG_Img.e68dc8fd39b186664d8c.jpeg",
     "static/media/ContactSection_Img.png": "/static/media/ContactSection_Img.660d66774540729b1019.png",
     "index.html": "/index.html",
-    "main.4254c592.css.map": "/static/css/main.4254c592.css.map",
-    "main.01afb4bb.js.map": "/static/js/main.01afb4bb.js.map",
+    "main.ed4d4bb3.css.map": "/static/css/main.ed4d4bb3.css.map",
+    "main.82965072.js.map": "/static/js/main.82965072.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4254c592.css",
-    "static/js/main.01afb4bb.js"
+    "static/css/main.ed4d4bb3.css",
+    "static/js/main.82965072.js"
   ]
 }
